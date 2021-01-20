@@ -1,50 +1,107 @@
 <html>
-    <head>
-        <style>
-            
-            *, *:before, *:after {
-                box-sizing: border-box;
-            }
+  <head>
+    <style>
+      @font-face {
+        font-family: "Tobias";
+        src: url("fonts/Tobias-Regular.eot"); /* IE 5-8 */
+        src: local("☺"),
+          /* sneakily trick IE */ url("Tobias-Regular.woff2") format("woff2"),
+          /* FF 3.6, Chrome 5, IE9 */ url("Tobias-Regular.woff") format("woff"); /* FF 3.6, Chrome 5, IE9 */
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
 
-            html, body {
-                font-size: clamp(18px, 3vw, 24px);
-                line-height: 1.45;
-                margin: 0;
-            }
+      html {
+        background-color: #000;
+        color: #f2f2f0;
+        line-height: 1.3;
+        margin: 0;
+        font-size: clamp(24px, 5vw, 60px);
+        padding: 1rem 2rem 1rem 1rem;
+      }
 
-            * {
-                font-weight: 400;
-                font-size: 1rem;
-            }
+      body {
+        font-family: Tobias;
+        max-width: 35ch;
+      }
 
-            body {
-                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-                max-width: 100%;
-                background-color: #fcdbfd;
-                position: relative;
-            }
+      h1,
+      h2,
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 100%;
+      }
 
-            a:hover {
-                text-decoration-style: dashed;
-            }
+      h2 {
+          margin-top: 3em;
+      }
 
-            .content {
-                width: 100%;
-                height: 100vh;
-                max-width: clamp(49ch, 40vw, 45ch);
-                padding: 2rem;
-                padding-top: 2rem;
-                background-color: #FFF;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="content">
-            <h1>Best Friend Studio is a research &amp; design group aimed at understanding how digital tools can act as invisible rudders in communities, helping steer them towards their collective goals.</h1>
+      p {
+          opacity: 0.6;
+          transition: all 0.25s ease-in-out;
+    transform-origin: center left;
+      }
 
-            <p>Founded by <a href="https://carlfairclough.me">Carl Fairclough</a>, the group leverages emerging technology to operate in a dynamic, transparent, co-operative style with members including user researchers, writers, designers and developers.</p>
-            
-            <p>Work with us: <a href="mailto:enquiries@bestfriend.studio">enquiries@bestfriend.studio</a>.</p>
-        </div>
-    </body>
+      p:hover{ opacity: 1; transform: scale(1.05); 
+      } 
+
+
+      a {
+        color: #f2f2f0;
+        opacity: 0.6;
+      }
+      a:hover {
+        text-decoration-style: dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Best Friend Studio</h1>
+    <p>
+      Designing products in collaboration with organisations across the globe
+    </p>
+
+    <h2>We have:</h2>
+
+    <p>
+      Designed Ethereum.org, the home of a cryptocurrency worth $160,000,953,313
+    </p>
+    <p>
+      Ran foundational research for MakerDAO, an organisation overseeing the
+      issuance of $60,626,000,000
+    </p>
+
+    <p>
+      Designed and developed MVPs for Mamo Pay in the Middle East, helping
+      founders successfully raise capital and reach their audiences
+    </p>
+
+    <p>
+      Designed and oversaw development of an Education platform in collaboration
+      with Government of the UAE
+    </p>
+
+    <p>
+      Designed the core of an infrastructure platform which is currently
+      powering banks and governments in the Middle East
+    </p>
+
+    <p>
+      Ran research across North Africa, South Asia and South America into the
+      potential value of Digital Products
+    </p>
+
+    <p>
+      Implemented design systems and organisational processes with eCommerce
+      organisations valued at over $1,000,000,000
+    </p>
+
+    <h2>Get in touch:</h2>
+      <p><a href="mailto:hello@bestfriend.studio">hello@bestfriend.studio</a>.</p>
+    </p>
+  </body>
 </html>
